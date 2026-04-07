@@ -33,7 +33,7 @@ class OpenClawAgent:
                 url = f"{self.hub_url}/api/register"
                 data = {
                     "name": self.name,
-                    "token": self.token,
+                    "invite_token": self.token,
                     "type": self.agent_type,
                     "description": self.description,
                     "capabilities": self._get_capabilities()
